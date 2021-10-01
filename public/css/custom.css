@@ -1,0 +1,566 @@
+.popup .overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background:#41414d91;
+    z-index: 1;
+    display: none;
+}
+.popup .content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0);
+    background: #fff;
+    width: 450px;
+    height: 220px;
+    z-index: 2;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.popup .close-btn{
+    position: absolute;
+    right: 20px;
+    top: 30px;
+    width: 30px;
+    height: 30px;
+    background: #222;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+}
+.popup.active .overlay{
+    display: block;
+}
+.popup.popup.active .content{border-radius: 15px;
+    transition: all 300ms ease-in-out;
+    transform: translate(-50%,-50%) scale(1);
+}
+
+
+
+* {
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+
+#w3lDemoBar.w3l-demo-bar {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9999;
+    padding: 40px 5px;
+    padding-top: 70px;
+    margin-bottom: 70px;
+    background: #0D1326;
+    border-top-left-radius: 9px;
+    border-bottom-left-radius: 9px;
+}
+
+#w3lDemoBar.w3l-demo-bar a {
+    display: block;
+    color: #e6ebff;
+    text-decoration: none;
+    line-height: 24px;
+    opacity: .6;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#w3lDemoBar.w3l-demo-bar span.w3l-icon {
+    display: block;
+}
+
+#w3lDemoBar.w3l-demo-bar a:hover {
+    opacity: 1;
+}
+
+#w3lDemoBar.w3l-demo-bar .w3l-icon svg {
+    color: #e6ebff;
+}
+
+#w3lDemoBar.w3l-demo-bar .responsive-icons {
+    margin-top: 30px;
+    border-top: 1px solid #41414d;
+    padding-top: 40px;
+}
+
+#w3lDemoBar.w3l-demo-bar .demo-btns {
+    border-top: 1px solid #41414d;
+    padding-top: 30px;
+}
+
+#w3lDemoBar.w3l-demo-bar .responsive-icons a span.fa {
+    font-size: 26px;
+}
+
+#w3lDemoBar.w3l-demo-bar .no-margin-bottom {
+    margin-bottom: 0;
+}
+
+.toggle-right-sidebar span {
+    background: #0D1326;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: #e6ebff;
+    border-radius: 50px;
+    font-size: 26px;
+    cursor: pointer;
+    opacity: .5;
+}
+
+.pull-right {
+    float: right;
+    position: fixed;
+    right: 0px;
+    top: 70px;
+    width: 90px;
+    z-index: 99999;
+    text-align: center;
+}
+
+#right-sidebar {
+    width: 90px;
+    position: fixed;
+    height: 100%;
+    z-index: 1000;
+    right: 0px;
+    top: 0;
+    margin-top: 60px;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+    overflow-y: auto;
+}
+
+.hide-right-bar-notifications {
+    margin-right: -300px !important;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+@media (max-width: 992px) {
+    #w3lDemoBar.w3l-demo-bar a.desktop-mode {
+        display: none;
+
+    }
+}
+
+@media (max-width: 767px) {
+    #w3lDemoBar.w3l-demo-bar a.tablet-mode {
+        display: none;
+
+    }
+}
+
+@media (max-width: 568px) {
+    #w3lDemoBar.w3l-demo-bar a.mobile-mode {
+        display: none;
+    }
+
+    #w3lDemoBar.w3l-demo-bar .responsive-icons {
+        margin-top: 0px;
+        border-top: none;
+        padding-top: 0px;
+    }
+
+    #right-sidebar,
+    .pull-right {
+        width: 90px;
+    }
+
+    #w3lDemoBar.w3l-demo-bar .no-margin-bottom-mobile {
+        margin-bottom: 0;
+    }
+}
+table {
+border-collapse: collapse;
+width: 100%;
+}
+
+td, th {
+border: none;
+text-align: left;
+padding: 5px;
+}
+
+tr:nth-child(even) {
+background-color: #dddddd;
+}
+
+
+
+/* Product page css start */
+.coupons,
+.banner-bootom-w3-agileits,
+.new_arrivals_agile_w3ls_info {
+    padding: 4em 0;
+}
+
+.page-title-wrapper {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.page-title {
+    display: block;
+    text-align: center;
+    font-size: 23px;
+    color: #666;
+    display: block;
+    text-align: center;
+    width: 100%;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin: 30px auto;
+    position: relative;
+}
+
+.page-title-wrapper .page-title span {
+    display: inline-block;
+    padding: 0 10px;
+    background: #fff;
+}
+
+.page-title-wrapper .page-title span:after {
+    width: 100%;
+    content: '';
+    height: 1px;
+    background: #ccc;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    z-index: -1;
+}
+
+.shop-by {
+    font-weight: 600;
+    font-size: 19px;
+}
+
+.category-list {
+    list-style-type: none;
+}
+
+.category-list li {
+    margin: 0;
+    padding: 10px 0;
+    border: 0;
+    width: 100%;
+    font-family: inherit;
+    font-size: 16px;
+    color: #333;
+    cursor: pointer;
+    border-top: 1px solid #ccc;
+}
+
+.category-list li i {
+    float: right;
+}
+
+.fa-angle-right:before {
+    content: "\f105";
+}
+
+.fa-angle-right:before {
+    content: "\f105";
+}
+
+#collapse2 {
+    max-height: 200px;
+    overflow-y: hidden;
+    transition: all 0.3s;
+}
+
+.panel-collapse.collapse {
+    max-height: 200px;
+    overflow-y: auto;
+    transition: all 0.3s;
+}
+
+.slider-container {
+    margin: 20px;
+}
+
+.noUi-target {
+    border-radius: 2px;
+}
+
+.noUi-background {
+    background: #D6D7D9;
+}
+
+.noUi-horizontal {
+    height: 4px;
+}
+
+.noUi-target {
+    position: relative;
+    direction: ltr;
+}
+
+.noUi-base,
+.noUi-handle {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+.noUi-base {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+.noUi-origin {
+    border-radius: 2px;
+}
+
+.noUi-connect {
+    background: #345DBB;
+    -webkit-transition: background 450ms;
+    transition: background 450ms;
+}
+
+.noUi-origin {
+    position: absolute;
+    right: 0;
+    top: 0;
+    left: 0;
+    bottom: 0;
+}
+
+.noUi-horizontal .noUi-handle {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    left: -7px;
+    top: -7px;
+    background-color: #345DBB;
+}
+
+.noUi-handle {
+    cursor: default;
+    -webkit-box-sizing: content-box !important;
+    -moz-box-sizing: content-box !important;
+    box-sizing: content-box !important;
+}
+
+.noUi-base,
+.noUi-handle {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+.noUi-handle {
+    position: relative;
+    z-index: 1;
+}
+
+.slider-labels {
+    margin-top: 18px;
+}
+
+.group-list li i {
+    float: left;
+    margin-left: 20px;
+    margin-right: 10px;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.group-list li {
+    margin: 0;
+    padding: 10px 0;
+    border: 0;
+    width: 100%;
+    font-family: inherit;
+    font-size: 16px;
+    color: #333;
+    cursor: pointer;
+    border-top: 1px solid #ccc;
+}
+
+.group-list li i {
+    float: left;
+    margin-left: 20px;
+    margin-right: 10px;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.product-men {
+    margin: top;
+    margin-top: 2em;
+}
+
+.men-pro-item {
+    position: relative;
+    box-shadow: 0px 0px 15px 0px #d6d6d6;
+    padding-bottom: 20px;
+}
+
+.men-thumb-item {
+    position: relative;
+}
+
+.men-thumb-item::before {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    opacity: 0;
+    z-index: 9;
+    visibility: hidden;
+    transition: all 0.5s ease-out 0s;
+}
+
+.men-thumb-item .pro-image-front {
+    opacity: 1;
+    visibility: visible;
+}
+
+.men-thumb-item img {
+    transition: all 0.5s ease-out 0s;
+    padding: 32px 30px 10px;
+}
+
+.product-men img {
+    width: 100%;
+}
+
+.pro-image-back {
+    transform: rotateY(180deg);
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.men-cart-pro {
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 0;
+    transition: all 1.5s ease-out 0s;
+    visibility: hidden;
+    z-index: 10;
+}
+
+.inner-men-cart-pro {
+    height: 100%;
+    position: relative;
+    width: 100%;
+    transition: all 0.5s ease-out 0s;
+}
+
+.inner-men-cart-pro .link-product-add-cart {
+    width: 100%;
+    height: auto;
+    top: 0;
+    left: 0;
+    position: absolute;
+    transition: all 0.5s ease-out 0s;
+}
+
+.link-product-add-cart {
+    background: #fc636b none repeat scroll 0 0;
+    color: rgb(255, 255, 255);
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    text-transform: uppercase;
+    transition: all 0.5s ease-out 0s;
+}
+
+.product-new-top {
+    background: #fc636b none repeat scroll 0 0;
+    color: #fff;
+    display: inline-block;
+    right: 0;
+    padding: 0 10px 1px;
+    position: absolute;
+    top: 0;
+    z-index: 99;
+}
+
+.item-info-product {
+    text-align: center;
+    margin: 20px 0 0;
+}
+
+.item-info-product h4 a {
+    font-size: 0.9em;
+    color: #fc636b;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.info-product-price {
+    margin: 10px 0;
+}
+
+.info-product-price span {
+    color: #000;
+    font-size: 1em;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.snipcart-details {
+    text-align: center;
+    margin: 0.5em auto 1em;
+    width: 77%;
+}
+
+.hvr-outline-out:before {
+    content: '';
+    position: absolute;
+    border: #ff434d solid 4px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: top, right, bottom, left;
+    transition-property: top, right, bottom, left;
+}
+
+.snipcart-details input.button {
+    font-size: 13px;
+    color: #fff;
+    background: #fc636b;
+    text-decoration: none;
+    position: relative;
+    border: none;
+    border-radius: 0;
+    width: 100%;
+    text-transform: uppercase;
+    padding: .5em 0;
+    outline: none;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+/* Product page css end */
