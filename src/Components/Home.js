@@ -38,14 +38,14 @@ const Home = () => {
         <div id="film_roll_1">
           <div><img src="images/images/banner/model-1.jpeg" alt="Groovy Apparel" /></div>
           <div><img src="images/images/banner/model-2.jpeg" alt="Groovy Apparel" /></div>
-          <div><img src="images/images/2ndbanner/KARISHMA(1).jpg" alt="Groovy Apparel" /></div>
-          <div><img src="images/images/2ndbanner/KARISHMA(1).jpg" alt="Groovy Apparel" /></div>
-          <div><img src="images/images/2ndbanner/KARISHMA(1).jpg" alt="Groovy Apparel" /></div>
-          <div><img src="images/images/2ndbanner/KARISHMA(1).jpg" alt="Groovy Apparel" /></div>
-          <div><img src="images/images/2ndbanner/KARISHMA(1).jpg" alt="Groovy Apparel" /></div>
-          <div><img src="images/images/2ndbanner/KARISHMA(1).jpg" alt="Groovy Apparel" /></div>
-          <div><img src="images/images/2ndbanner/KARISHMA(1).jpg" alt="Groovy Apparel" /></div>
-          <div><img src="images/images/2ndbanner/KARISHMA(1).jpg" alt="Groovy Apparel" /></div>
+          <div><img src="images/images/banner/model-1.jpeg" alt="Groovy Apparel" /></div>
+          <div><img src="images/images/banner/model-2.jpeg" alt="Groovy Apparel" /></div>
+          <div><img src="images/images/banner/model-1.jpeg" alt="Groovy Apparel" /></div>
+          <div><img src="images/images/banner/model-2.jpeg" alt="Groovy Apparel" /></div>
+          <div><img src="images/images/banner/model-1.jpeg" alt="Groovy Apparel" /></div>
+          <div><img src="images/images/banner/model-2.jpeg" alt="Groovy Apparel" /></div>
+          <div><img src="images/images/banner/model-1.jpeg" alt="Groovy Apparel" /></div>
+          <div><img src="images/images/banner/model-2.jpeg" alt="Groovy Apparel" /></div>
         </div>
       </div>
       {/* //Model-Slider */}

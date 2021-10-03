@@ -1,8 +1,11 @@
-import React from 'react';
+import React,{useEffect} from 'react';
 import Footer from '../assets/Footer';
 import Navbar from '../assets/Navbar';
+import {Helmet} from "react-helmet";
+
 
 const ProductPage = () => {
+
     return (
         <>
             <div className="agileheader" id="agileitshome">
@@ -13,6 +16,8 @@ const ProductPage = () => {
                 <div class="agileheader-topbar">
             
                 </div>
+
+                
                 
                 {/* Header-Slider */}
                     <div className="agileheader-banner">
@@ -57,43 +62,33 @@ const ProductPage = () => {
                             Indo-Western(20)</li>
                         </ul>
                       </div>
-                      <li data-toggle="collapse" href="#collapse2">Price<i className="fa fa fa-angle-right" /></li>
-                      <div id="collapse2" className="panel-collapse collapse">
-                        <div className="slider-container">
-                          <div className="row">
-                            <div className="col-sm-12">
-                              <div id="slider-range" className="noUi-target noUi-ltr noUi-horizontal noUi-background">
-                                <div className="noUi-base">
-                                  <div className="noUi-origin noUi-connect" style={{left: '9.54774%'}}>
-                                    <div className="noUi-handle noUi-handle-lower" />
-                                  </div>
-                                  <div className="noUi-origin noUi-background" style={{left: '49.7487%'}}>
-                                    <div className="noUi-handle noUi-handle-upper" />
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div className="row slider-labels">
-                            <div className="col-xs-6 caption">
-                              <strong><span id="slider-range-value1">Rs.
-                                  10,000</span></strong>
-                            </div>
-                            <div className="col-xs-6 text-right caption">
-                              <strong><span id="slider-range-value2">Rs.
-                                  50,000</span></strong>
-                            </div>
-                          </div>
-                          <div className="row">
-                            <div className="col-sm-12">
-                              <form>
-                                <input type="hidden" name="min-value" defaultValue />
-                                <input type="hidden" name="max-value" defaultValue />
-                              </form>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
+                      <li data-toggle="collapse" href="#collapse2">Price<i class="fa fa fa-angle-right"></i></li>
+                      <div id="collapse2" class="panel-collapse collapse">
+                                       
+                                       <div class="slider-container">
+                                           <div class="row">
+                                               <div class="col-sm-12">
+                                                   <div id="slider-range"></div>
+                                               </div>
+                                           </div>
+                                           <div class="row slider-labels">
+                                               <div class="col-xs-6 caption">
+                                                   <strong><span id="slider-range-value1"></span></strong>
+                                               </div>
+                                               <div class="col-xs-6 text-right caption">
+                                                   <strong><span id="slider-range-value2"></span></strong>
+                                               </div>
+                                           </div>
+                                           <div class="row">
+                                               <div class="col-sm-12">
+                                                   <form>
+                                                       <input type="hidden" name="min-value" value="" />
+                                                       <input type="hidden" name="max-value" value="" />
+                                                   </form>
+                                               </div>
+                                           </div>
+                                       </div>
+                                   </div>
                     </ul>
                   </div>
                 </div>
@@ -203,6 +198,8 @@ const ProductPage = () => {
       {/* product page end */}
 
         <Footer />
+
+
 
         </>
     )
