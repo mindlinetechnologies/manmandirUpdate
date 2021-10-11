@@ -1,10 +1,24 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react';
+import $ from 'jquery'
+import './../css/header.css'
+import { Link } from 'react-router-dom';
 
-const Navbar = () => {
+const NavbarComponent = () => {
+
+  const data = [
+    {
+      id:1,
+      name:'ap',
+      email:'ap@gmail.com',
+      address : 'rk nagar'
+    }
+  ]
+
+
     return (
         <>
             <nav className="navbar navbar-default w3ls navbar-fixed-top">
-          <div className="container">
+          <div className="container-fluid">
             <div className="navbar-header wthree nav_2">
               <button type="button" className="navbar-toggle collapsed navbar-toggle1" data-toggle="collapse" data-target="#bs-megadropdown-tabs">
                 <span className="sr-only">Toggle navigation</span>
@@ -30,7 +44,7 @@ const Navbar = () => {
                     <div className="row">
                       <div className="col-sm-6 w3layouts-nav-agile w3layouts-womens-nav-agileits w3layouts-womens-nav-agileits-1">
                         <ul className="multi-column-dropdown">
-                          <li><a href="Product-page.html">Western Bridal</a></li>
+                          <li><Link to={{pathname:'/products',state:data}} >Western Bridal</Link></li>
                           <li><a href="Product-page.html">Western Non Bridal Gowns</a></li>
                           <li><a href="Product-page.html">Indo Western Bridal</a></li>
                           <li><a href="Product-page.html">Indo Western Non Bridal</a></li>
@@ -45,11 +59,11 @@ const Navbar = () => {
                 <li className="dropdown">
                   <a href="#" className="dropdown-toggle hyper" data-toggle="dropdown"><span> Lehangas
                     </span></a>
-                  <ul className="dropdown-menu multi multi3">
+                    <ul className="dropdown-menu multi multi2">
                     <div className="row">
-                      <div className="col-sm-6 w3layouts-nav-agile w3layouts-acc-nav-agileits w3layouts-acc-nav-agileits-1">
+                      <div className="col-sm-6 w3layouts-nav-agile w3layouts-womens-nav-agileits w3layouts-womens-nav-agileits-1">
                         <ul className="multi-column-dropdown">
-                          <li><a href="Product-page.html">Bridal Lehangas</a></li>
+                        <li><Link to="/products">Bridal Lehangas</Link></li>
                           <li><a href="Product-page.html">Bridesmaid Lehangas</a></li>
                           <li><a href="Product-page.html">Cape Lehangas</a></li>
                           <li><a href="Product-page.html">Crop Tops &amp; Skirts</a></li>
@@ -57,21 +71,42 @@ const Navbar = () => {
                           <li><a href="Product-page.html">Jacket LEhangas</a></li>
                         </ul>
                       </div>
-                      <div className="col-sm-6 w3layouts-nav-agile w3layouts-acc-nav-agileits w3layouts-acc-nav-agileits-2">
+                      <div className="col-sm-6 w3layouts-nav-agile w3layouts-womens-nav-agileits w3layouts-womens-nav-agileits-2">											
                         <a href="Product-page.html"><img src="images/images/lehangas/tempimg/lehanga-1.jpg" alt="" /></a>
                       </div>
-                      <div className="clearfix" />
-                    </div>
+                    </div>										
                   </ul>
+                 
                 </li>
+                
+
+                <li class="dropdown">
+								<Link to="/newArrivals"><span>New Arrivals
+									</span></Link>
+							</li>
+							<li class="dropdown">
+								<Link to="/bestSeller"><span>Best Seller
+									</span></Link>
+							</li>
+                
                 <ul className="nav justify-content-end all-icons">
                   <li className="dropdown search">
-                    <form action="#" method="post">
+                  <form>
+                  <div class="form-group mb-4 search_box_parent">
+                      <input type="search" placeholder="What're you searching for?" aria-describedby="button-addon" class="form-control border-primary" />
+                      <div className="input-group-append search_box_child">
+                          <button id="button-addon1" type="submit" className="btn btn-link text-primary"><i className="fa fa-search" /></button>
+                      </div>
+
+                  </div>
+                </form>
+                 
+                    {/* <form action="#" method="post">
                       <input type="search" name="Search" placeholder="Search for a Product" required />
                       <button type="submit" className="btn btn-default search" aria-label="Left Align">
                         <i className="fa fa-search" aria-hidden="true" />
                       </button>
-                    </form>
+                    </form> */}
                   </li>
                   <li className="dropdown cart">
                     <form action="#" method="post" className="last">
@@ -104,4 +139,4 @@ const Navbar = () => {
     )
 }
 
-export default Navbar
+export default NavbarComponent

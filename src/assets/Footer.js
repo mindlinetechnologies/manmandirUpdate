@@ -1,4 +1,5 @@
-import React from 'react'
+import React,{useEffect} from 'react';
+import { Link} from 'react-router-dom';
 
 const Footer = () => {
     return (
@@ -26,25 +27,25 @@ const Footer = () => {
           <div className="col-md-3 agileinfofooter-grid agileinfofooter-grid1">
             <ul>
               <li className="footer-head">Our Links</li>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="about.html">About</a></li>
-              <li><a href="contact.html">Contact us</a></li>
-              <li><a href="cart.html">Cart</a></li>
+              <li><Link to="/">Home</Link></li>
+              <li><Link to="/about">About</Link></li>
+              <li><Link to="/contact">Contact us</Link></li>
+              <li><Link to="/cart">Cart</Link></li>
             </ul>
             <ul>
               <li className="footer-head">My Account</li>
-              <li><a className="popup-with-zoom-anim" href="#small-dialog1">Login</a></li>
-              <li><a href="wishlist.html">Wishlist</a></li>
-              <li><a href="order-history.html">Order History</a></li>
-              <li><a href="checkout.html">Checkout</a></li>
+              <li><Link className="popup-with-zoom-anim" to="/login">Login</Link></li>
+              <li><Link to="/wishlist">Wishlist</Link></li>
+              <li><Link to="/orderHistory">Order History</Link></li>
+              <li><Link to="/checkout">Checkout</Link></li>
             </ul>
             <ul>
               <li className="footer-head">Useful Links</li>
-              <li><a href="shipping.html">Shipping</a></li>
-              <li><a href="payment.html">Payment Policy</a></li>
-              <li><a href="return.html">Return Policy</a></li>
-              <li><a href="altering.html">Altering</a></li>
-              <li><a href="Custom.html">Customization &amp; Tailoring</a></li>
+              <li><Link to="/orderTracking">Shipping</Link></li>
+              <li><a href="#">Payment Policy</a></li>
+              <li><a href="#">Return Policy</a></li>
+              <li><a href="#">Altering</a></li>
+              <li><a href="#">Customization &amp; Tailoring</a></li>
             </ul>
           </div>
           <div className="col-md-3 agileinfofooter-grid agileinfofooter-grid2">

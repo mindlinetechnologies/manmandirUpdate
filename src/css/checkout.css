@@ -1,0 +1,184 @@
+/* checkout css */
+.page-title-wrapper{
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 60px;
+}
+.page-title{
+    display: block;
+    text-align: center;
+    font-size: 23px;
+    color: #666;
+    display: block;
+    text-align: center;
+    width: 100%;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin: 30px auto;
+    position: relative;
+}
+.page-title-wrapper .page-title span {
+    display: inline-block;
+    padding: 0 10px;
+    background: #fff;
+}
+.page-title-wrapper .page-title span:after {
+    width: 100%;
+    content: '';
+    height: 1px;
+    background: #ccc;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    z-index: -1;
+}
+.box{
+    /* border: 1px solid #111; */
+    border-radius: 10px;
+    padding: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    width: 100%;
+    margin-bottom: 30px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+}
+.box .title {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 32px;
+    border-bottom: 1px solid #CFD4D6;
+    padding-bottom: 12px;            
+}
+button.account{
+    padding: 9px 15px;
+    font-size: 14px;
+    /* font-weight: 600; */
+    text-transform: uppercase;
+    /* background: #c69c6d; */
+    border-radius: 6px;
+    border: none;
+    color: #111;
+    /* line-height: 22px; */
+    /* margin-top: 2px; */
+    font-family: inherit;
+    transition: all 0.3s ease;
+}
+button.sign-in{
+    background: #C86A56;
+}
+button.sign-up{
+    background: #B96E5D;
+}
+button.account:hover{
+    background-color: #111;
+    color: #fff;
+}
+.mt{
+    margin-top: 15px;
+}
+label span{
+    color: red;
+}
+.order-box{
+    max-height: 275px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    width: 100%;
+    margin-bottom: 15px;
+}
+.order{
+    /* max-height: 275px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    width: 100%; */
+    margin-bottom: 15px;
+}
+.order-img-product{
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+}
+.order-product-name{
+    font-size: 14px;
+    font-weight: 600;
+    margin-left: 25px;
+    margin-right: 5px;
+}
+.order-product-price{
+    font-size: 13px;
+    margin-top: 5px;
+    margin-left: 25px;
+    margin-right: 5px;
+}
+.order-product-name-mobile{
+    display: none;
+}
+.ml-mr{
+    margin-right: 0;
+    margin-left: 0;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #CFD4D6;
+    padding-bottom: 15px;
+}
+button.btn-submit{
+    padding: 10px 40px;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    background: #c69c6d;
+    border-radius: 6px;
+    border: none;
+    color: #111;
+    margin-top: 2px;
+    font-family: inherit;
+    transition: all 0.3s ease;
+}
+button.btn-submit:hover{
+    background: #111;
+    color: #fff;
+}
+.d-flex{
+    display: flex!important;
+}
+.ml-auto, .mx-auto {
+    margin-left: auto!important;
+    margin-top: 9px;
+}
+.font-weight-bold {
+    font-weight: 700!important;
+    font-size: 16px;
+    margin-right: 5px;
+}
+.d-flex h4{
+    font-size: 16px;
+    margin-left: 5px;
+}
+.gray-effect{
+    background: lightgray;
+}
+
+input[type="text"], input[type="password"], input.email.aitsw3ls, textarea.text::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: black;
+  }
+@media only screen and (max-width: 768px){
+    .col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12{
+        position: relative;
+        min-height: 1px;
+        padding-right: 3px;
+        padding-left: 3px;
+    }
+    .box {
+        border-radius: 10px;
+        padding: 20px;
+        width: 100%;
+        margin-bottom: 30px;
+        box-shadow: rgb(0 0 0 / 15%) 0px 2px 8px;
+    }
+    button.btn-submit {
+        padding: 8px 35px;
+        font-size: 13px;
+    }
+}
+
+/* end checkout css */

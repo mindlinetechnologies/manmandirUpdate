@@ -1,8 +1,20 @@
-import React from 'react';
+import React,{useEffect} from 'react';
 import Footer from '../assets/Footer';
 import Navbar from '../assets/Navbar';
+import './../css/cartpage.css'
+import {useHistory} from 'react-router-dom';
 
 const Cart = () => {
+  let history = useHistory();
+  useEffect(() => {
+      const unlisten = history.listen(() => {
+        window.scrollTo(0, 0);
+      });
+      return () => {
+        unlisten();
+      }
+  },[])
+
     return (
         <>
             <div className="agileheader" id="agileitshome">

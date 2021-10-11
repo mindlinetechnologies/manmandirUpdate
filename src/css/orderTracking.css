@@ -1,0 +1,221 @@
+/* order-tracking css */
+.page-title-wrapper{
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 60px;
+}
+.page-title{
+    display: block;
+    text-align: center;
+    font-size: 23px;
+    color: #666;
+    display: block;
+    text-align: center;
+    width: 100%;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin: 30px auto;
+    position: relative;
+}
+.page-title-wrapper .page-title span {
+    display: inline-block;
+    padding: 0 10px;
+    background: #fff;
+}
+.page-title-wrapper .page-title span:after {
+    width: 100%;
+    content: '';
+    height: 1px;
+    background: #ccc;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    z-index: -1;
+}
+.box{
+    /* border: 1px solid #111; */
+    border-radius: 10px;
+    padding: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    width: 100%;
+    margin-bottom: 30px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+}
+.box .title {
+    font-size: 18px;
+    margin-bottom: 32px;
+    display: block;
+    border-bottom: 1px solid #CFD4D6;
+    padding-bottom: 20px;
+    color: #444;
+}
+.control-label {
+    padding-top: 5px;
+    text-align: left;
+}
+button.btn-submit{
+    /* padding: 0 5px; */
+    padding: 4px 10px;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    background: #c69c6d;
+    border-radius: 6px;
+    border: none;
+    color: #111;
+    line-height: 22px;
+    margin-top: 2px;
+    font-family: inherit;
+}
+.information_block .hp_cards_info {
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    position: relative;
+    padding-bottom: 2px;
+}
+.hp_cards_info h5 {
+    font-size: 17px;
+    /* margin: 9px 0 0; */
+    border-bottom: 1px solid #CFD4D6;
+    /* color: #000; */
+    padding-bottom: 21px;
+    padding-left: 35px;
+    font-weight: 600;
+}
+.hp_cards_info h5 i {
+    margin-right: 8px;
+    font-size: 22px;
+}
+.order_detail_icon {
+    width: 25px;
+    height: 25px;
+    /* background: url(./../../public/images/image) no-repeat; */
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: -5px;
+}
+.mb-20 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.text-bold{
+    font-weight: 600;
+}
+.text-bold span{
+    font-weight: normal;
+}
+.color-red{
+    color: red;
+}
+.color-green{
+    color: green;
+}
+.delievery_info {
+    /* padding: 25px 15px 25px; */
+    position: relative;
+    background: #fff;
+    overflow: hidden;
+    /* border-radius: 0 0 10px 10px; */
+    /* -webkit-border-radius: 0 0 10px 10px; */
+    /* margin-bottom: 45px; */
+}
+.delievery_list_wrap {
+    max-height: 243px;
+    overflow-y: auto;
+}
+.delievery_info ul {
+    padding: 0;
+    width: 70%;
+    float: right;
+    margin: 0;
+}
+.delievery_info li {
+    list-style: none;
+    background: #fff;
+    padding: 24px 0px;
+    border-bottom: 1px solid #e8e8e8;
+    position: relative;
+    margin-right: 10px;
+}
+.delievery_info li:after {
+    content: '';
+    height: 50%;
+    width: 2px;
+    display: block;
+    position: absolute;
+    left: -36px;
+    top: -44px;
+    z-index: 9;
+    border: 1px dashed #dedede;
+}
+.circle_icon {
+    height: 16px;
+    width: 16px;
+    position: absolute;
+    left: 0;
+    border: 3px solid white;
+    box-shadow: 0 0 2px #a8a8a8;
+    display: block;
+    left: -43px;
+    border-radius: 50%;
+    background: #a8a8a8;
+    z-index: 9;
+    top: 42px;
+}
+.delievery_info li.active .circle_icon {
+    background: #18F040;
+}
+.delievery_info li.active .circle_icon {
+    border: 3px solid white;
+}
+.delievery_info li span:first-child {
+    display: block;
+    margin-bottom: 12px;
+}
+.delievery_info li activity {
+    color: #737373;
+}
+.date_info_wrap {
+    position: absolute;
+    left: -118px;
+    top: 28px;
+    text-align: right;
+    font-size: 13px;
+}
+.delievery_info li:last-child {
+    margin-bottom: 0;
+}
+@media only screen and (max-width: 768px){
+    .col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12{
+        position: relative;
+        min-height: 1px;
+        padding-right: 3px;
+        padding-left: 3px;
+    }
+    .fa, .far, .fas {
+        font: normal normal normal 14px/1 FontAwesome;
+        font-size: 20px;
+    }
+    .box{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .box .title{
+        font-size: 15px;
+    }
+    button.btn-submit{
+        margin-top: 10px;
+    }
+    .delievery_info ul{
+        width: 53%;
+    }
+    .delievery_info li:after{
+        height: 30%;
+        top: 56px;
+    }
+}
+
+/* end order tracking css */

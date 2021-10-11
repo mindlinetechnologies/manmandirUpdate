@@ -137,11 +137,11 @@ a:focus, a:hover {
 		margin-right: 5px;
 	}
 	ul.dropdown-menu.multi.multi2 {margin: 10px;
-		display: none;left: -285px;
+		display: none;left: 192px;
     border-radius: 10px; background: rgb(255, 255, 255);
 	}
 	ul.dropdown-menu.multi.multi3 {
-		left: -396px;
+		left: 232px;
 	}
 
 	ul.dropdown-menu.multi.multi4 {
@@ -153,7 +153,7 @@ a:focus, a:hover {
 	}
 
 	a.dropdown-toggle.hyper, .navbar-default .navbar-nav > li > a {
-		padding: 10px 20px;
+		padding: 15px 20px;
 		font-family: 'Montserrat', sans-serif;
 		line-height: 0;
 		margin: 12px 5px 0;
@@ -583,13 +583,13 @@ a:focus, a:hover {
 		input[type="text"], input[type="password"], input.email.aitsw3ls, textarea.text {
 			padding: 15px;
 			width: 100%;
-			border: none;
+			/* border: none; */
 			font-family: 'Montserrat', sans-serif;
 			font-size: 11px;
 			color: #FFF;
 			outline: none;
 			margin-bottom: 20px;
-			background-color: #9527275c;
+			/* background-color: #9527275c; */
 		}
 
 		ul.tick {
@@ -654,7 +654,7 @@ a:focus, a:hover {
 			border: 2px outset #ffffff78;
     display: inline-block;
     background: linear-gradient( 
-45deg, #9527275c, #e3101075);
+45deg,  #ec7f18, #c32826);
     padding: 8px 25px;
     border-radius: 4px;
     color: #fff;
@@ -5519,4 +5519,16 @@ p.single-price-text {
 
 .agileinfofooter-grids.footer-head{
 	font-size: 13px;font-weight: 600;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
 }

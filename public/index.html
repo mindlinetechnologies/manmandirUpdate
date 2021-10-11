@@ -32,8 +32,68 @@
 	<link rel="stylesheet" href="css/font-awesome.css" type="text/css" media="all">
 	<!-- TTF -->
 	<link rel="stylesheet" href="fonts/fontawesome-webfont.ttf" type="text/css" media="all">
-  <link rel="stylesheet" href="css/custom.css" type="text/css" media="all">
+  <!-- <link rel="stylesheet" href="css/custom.css" type="text/css" media="all"> -->
+  <link
+  rel="stylesheet"
+  href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+/>
+
+<!-- searchbar cdn -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+<!-- end searchbar cdn -->
   
+<style>
+	/* adds some margin below the link sets  */
+.navbar .dropdown-menu div[class*="col"] {
+   margin-bottom:1rem;
+}
+
+.navbar .dropdown-menu {
+  border:none;
+  /* background-color:#0060c8!important; */
+}
+
+/* breakpoint and up - mega dropdown styles */
+@media screen and (min-width: 992px) {
+  
+  /* remove the padding from the navbar so the dropdown hover state is not broken */
+.navbar {
+  padding-top:0px;
+  padding-bottom:0px;
+}
+
+/* remove the padding from the nav-item and add some margin to give some breathing room on hovers */
+.navbar .nav-item {
+  padding:.5rem .5rem;
+  margin:0 .25rem;
+}
+
+/* makes the dropdown full width  */
+.navbar .dropdown {position:static;}
+
+.navbar .dropdown-menu {
+  width:20%;
+  left:0;
+  right:0;
+/*  height of nav-item  */
+  top:64px;
+}
+  
+  /* shows the dropdown menu on hover */
+.navbar .dropdown:hover .dropdown-menu, .navbar .dropdown .dropdown-menu:hover {
+  display:block!important;
+}
+  
+  .navbar .dropdown-menu {
+    border: 1px solid rgba(0,0,0,.15);
+    background-color: #fff;
+  }
+
+}
+
+</style>
+
 
 
     <!-- end manmandir website css links -->
@@ -98,7 +158,7 @@
 		ga('send', 'pageview');
 	</script>
 	<script async src='../../../../../js/autotrack.js'></script>
-
+	
 
 
   <!-- //Copyright -->
@@ -191,7 +251,16 @@
 					return true;
 				});
 			}).call(this);
-		</script>
+
+</script>
+
+
+<!-- Countdown-Timer-JavaScript-File-Links -->
+<script type="text/javascript" src="js/moment.js"></script>
+<script type="text/javascript" src="js/moment-timezone-with-data.js"></script>
+<script type="text/javascript" src="js/timer.js"></script>
+<!-- //Countdown-Timer-JavaScript-File-Links -->
+
 		<!-- //Model-Slider-JavaScript-Files -->
 		<!-- //Custom-JavaScript-File-Links -->
 		<!-- Bootstrap-JavaScript -->
@@ -204,6 +273,28 @@
 				document.getElementById("popup-1").classList.toggle("active");
 			}
 		</script>
+
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>        
+<script type="text/javascript">
+	google.maps.event.addDomListener(window, 'load', init);
+	function init() {
+		var mapOptions = {
+			zoom: 11,
+			center: new google.maps.LatLng(16.69486, 74.24299),
+			styles: [{"featureType":"all","elementType":"labels.text.fill","stylers":[{"saturation":36},{"color":"#000000"},{"lightness":40}]},{"featureType":"all","elementType":"labels.text.stroke","stylers":[{"visibility":"on"},{"color":"#000000"},{"lightness":16}]},{"featureType":"all","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"administrative","elementType":"geometry.fill","stylers":[{"color":"#000000"},{"lightness":20}]},{"featureType":"administrative","elementType":"geometry.stroke","stylers":[{"color":"#000000"},{"lightness":17},{"weight":1.2}]},{"featureType":"landscape","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":20}]},{"featureType":"poi","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":21}]},{"featureType":"road.highway","elementType":"geometry.fill","stylers":[{"color":"#000000"},{"lightness":17}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"color":"#000000"},{"lightness":29},{"weight":0.2}]},{"featureType":"road.arterial","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":18}]},{"featureType":"road.local","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":16}]},{"featureType":"transit","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":19}]},{"featureType":"water","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":17}]}]
+		};
+		var mapElement = document.getElementById('map');
+		var map = new google.maps.Map(mapElement, mapOptions);
+		var marker = new google.maps.Marker({
+			position: new google.maps.LatLng(44.6648, 11.1342),
+			map: map,
+		});
+	}
+</script>
+
+<script src="js/custom.js"></script>
+
+
 
 		
 

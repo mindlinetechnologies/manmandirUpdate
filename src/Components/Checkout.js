@@ -1,7 +1,20 @@
-import React from 'react';
+import React,{useEffect} from 'react';
 import Navbar from '../assets/Navbar';
+import './../custom.css';
+import './../css/checkout.css'
+import {useHistory} from 'react-router-dom';
 
 const Checkout = () => {
+  let history = useHistory();
+  useEffect(() => {
+      const unlisten = history.listen(() => {
+        window.scrollTo(0, 0);
+      });
+      return () => {
+        unlisten();
+      }
+  },[])
+  
     return (
         <>
            <div className="agileheader" id="agileitshome">

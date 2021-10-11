@@ -1,11 +1,27 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Footer from '../assets/Footer';
 import Navbar from '../assets/Navbar';
+import { Link,useHistory} from 'react-router-dom';
+
+
+
+
 
 const Home = () => {
+  let history = useHistory();
+  useEffect(() => {
+      const unlisten = history.listen(() => {
+        window.scrollTo(0, 0);
+      });
+      return () => {
+        unlisten();
+      }
+  },[])
 
+ 
     return (
         <>
+          
       
                  <div className="agileheader" id="agileitshome">
         {/* Navigation */}
@@ -17,39 +33,52 @@ const Home = () => {
             
         </div>
 
-        <div class="w3slideraits">
-				<div class="fluid_dg_wrap fluid_dg_emboss pattern_1 fluid_dg_white_skin" id="fluid_dg_wrap_4">
-					<div data-thumb="images/images/banner/7.jpg" data-src="images/images/banner/7.jpg"></div>
-					<div data-thumb="images/images/banner/5.jpg" data-src="images/images/banner/5.jpg"></div>
-					<div data-thumb="images/images/banner/6.jpg" data-src="images/images/banner/6.jpg"></div>
-					<div data-thumb="images/images/banner/4.jpg" data-src="images/images/banner/4.jpg"></div>
-					<div data-thumb="images/images/banner/KARISHMA(1).jpg"
-						data-src="images/images/banner/KARISHMA(1).jpg"></div>
-				</div>
-			</div>
-
-
+        <div id="myCarousel" className="carousel slide" data-ride="carousel">
+        {/* Indicators */}
+        <ol className="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to={0} className="active" />
+          <li data-target="#myCarousel" data-slide-to={1} />
+          <li data-target="#myCarousel" data-slide-to={2} />
+        </ol>
+        {/* Wrapper for slides */}
+        <div className="carousel-inner">
+          <div className="item active">
+            <img src="images/images/banner/7.jpg" alt="Los Angeles" />
+            <div className="carousel-caption">
+              <h1>Shopping time</h1>
+              <p>Offer on your favorite clothing is always so much fun!</p>
+              <input type="submit" defaultValue="SEND MESSAGE" value="Shop Now" style={{width:'50%'}}/>
+            </div>
+          </div>
+          <div className="item">
+            <img src="images/images/banner/7.jpg" alt="Chicago" />
+            <div className="carousel-caption">
+              <h1>Today's special deal</h1>
+              <p>Only for first 50 customer!</p>
+              <input type="submit" defaultValue="SEND MESSAGE" value="Shop Now" style={{width:'50%'}}/>
+            </div>
+          </div>
+          <div className="item">
+            <img src="images/images/banner/7.jpg" alt="New York" />
+            <div className="carousel-caption">
+              <h1>Discount offer</h1>
+              <p>For Wedding season. Buy our best products on over 50% sale. Grab it soon.</p>
+              <input type="submit" defaultValue="SEND MESSAGE" value="Shop Now" style={{width:'50%'}}/>
+            </div>
+          </div>
         </div>
-
-
-        {/* Model-Slider */}
-
-      <div className="agilemodel-slider">
-        <div id="film_roll_1">
-          <div><img src="images/images/banner/model-1.jpeg" alt="Groovy Apparel" /></div>
-          <div><img src="images/images/banner/model-2.jpeg" alt="Groovy Apparel" /></div>
-          <div><img src="images/images/banner/model-1.jpeg" alt="Groovy Apparel" /></div>
-          <div><img src="images/images/banner/model-2.jpeg" alt="Groovy Apparel" /></div>
-          <div><img src="images/images/banner/model-1.jpeg" alt="Groovy Apparel" /></div>
-          <div><img src="images/images/banner/model-2.jpeg" alt="Groovy Apparel" /></div>
-          <div><img src="images/images/banner/model-1.jpeg" alt="Groovy Apparel" /></div>
-          <div><img src="images/images/banner/model-2.jpeg" alt="Groovy Apparel" /></div>
-          <div><img src="images/images/banner/model-1.jpeg" alt="Groovy Apparel" /></div>
-          <div><img src="images/images/banner/model-2.jpeg" alt="Groovy Apparel" /></div>
-        </div>
+        {/* Left and right controls */}
+        <a className="left carousel-control" href="#myCarousel" data-slide="prev">
+          <span className="glyphicon glyphicon-chevron-left" />
+          <span className="sr-only">Previous</span>
+        </a>
+        <a className="right carousel-control" href="#myCarousel" data-slide="next">
+          <span className="glyphicon glyphicon-chevron-right" />
+          <span className="sr-only">Next</span>
+        </a>
       </div>
-      {/* //Model-Slider */}
 
+        </div>
 
 {/* Latest-Arrivals */}
 <div className="wthreehome-latest">
@@ -64,7 +93,7 @@ const Home = () => {
               </div>
               <h4>Lehengas</h4>
               <h5>Lorem Ipsum Dolor Site Amet</h5>
-              <h6><a href="Product-page.html">Shop Now</a></h6>
+              <h6><Link to="/products">Shop Now</Link></h6>
             </div>
             <div className="col-md-6 wthreehome-latest-grid wthreehome-latest-grid2">
               <div className="grid">
@@ -75,7 +104,7 @@ const Home = () => {
               </div>
               <h4>JACKET Lehangas</h4>
               <h5>Lorem Ipsum Dolor Site Amet</h5>
-              <h6><a href="Product-page.html">Shop Now</a></h6>
+              <h6><Link to="/products">Shop Now</Link></h6>
             </div>
             <div className="col-md-6 wthreehome-latest-grid wthreehome-latest-grid3">
               <div className="grid">
@@ -86,7 +115,7 @@ const Home = () => {
               </div>
               <h4>Indo western Gowns</h4>
               <h5>Lorem Ipsum Dolor Site Amet</h5>
-              <h6><a href="Product-page.html">Shop Now</a></h6>
+              <h6><Link to="/products">Shop Now</Link></h6>
             </div>
             <div className="col-md-6 wthreehome-latest-grid wthreehome-latest-grid4">
               <div className="grid">
@@ -97,7 +126,7 @@ const Home = () => {
               </div>
               <h4>Western Bridal Gowns</h4>
               <h5>Lorem Ipsum Dolor Site Amet</h5>
-              <h6><a href="Product-page.html">Shop Now</a></h6>
+              <h6><Link to="/products">Shop Now</Link></h6>
             </div>
           </div>
           <div className="clearfix" />
@@ -241,6 +270,8 @@ const Home = () => {
       {/* //Newsletter */}
 
         <Footer />
+
+       
 
 
         </>

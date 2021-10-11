@@ -1,0 +1,151 @@
+.pro-detail {
+  margin: 50px;
+  padding: 50px;
+}
+
+.img-magnifier-container {
+  position: relative;
+}
+
+.img-magnifier-container img {
+  width: 100%;
+  height: 100%;
+}
+
+.img-magnifier-glass {
+  position: absolute;
+  border: 1px solid rgb(255, 255, 255);
+  cursor: none;
+  /*Set the size of the magnifier glass:*/
+  width: 150px;
+  height: 150px;
+}
+
+.col-md-1 img {
+  padding-bottom: 5px;
+  width: 93px;
+  margin-left: -15px;
+}
+
+/* content css */
+.color-quality {
+  display: flex;
+}
+
+.color-quality .color-quality-right {
+  margin: 5px;
+}
+
+.occasion-cart {
+  display: flex;
+}
+
+.occasion-cart .add-cart,
+.occasion-cart .buyproduct {
+  margin: 5px;
+  padding: 5px;
+}
+
+.addwishlist {
+  border-radius: 50%;
+  border: 1px solid #8f8d8d;
+  outline-offset: auto;
+  margin-top: 25px;
+  padding: 4px 10px 0px 10px;
+  width: 50px;
+  height: 50px;
+  font-size: 30px;
+  cursor: pointer;
+  background: linear-gradient(45deg, #9527275c, #e3101075);
+  box-shadow: 0 0 0 4px #fff2;
+  transition-property: transform, background;
+  transition: 0.3s ease-in-out;
+}
+
+.fa {
+  color: white;
+}
+
+.addwishlist:hover {
+  border: 1px solid red;
+  border-radius: 50%;
+}
+
+.icon img {
+  width: 40px;
+}
+
+.service-list ul {
+  display: flex;
+}
+
+.service-list ul li {
+  text-decoration: none;
+  color: #333;
+  margin: 15px;
+  list-style-type: none;
+}
+
+.accordion-header button {
+  border: none;
+  background: none;
+}
+
+.accordion .accordion-item {
+  margin: 5px;
+  width: 696px;
+  border-bottom: 1px solid #ec7e18b4;
+  font-size: 13px;
+  padding: 5px;
+}
+
+.accordion .accordion-item h4 {
+  font-size: 15px;
+}
+
+.accordion .accordion-item h4 button .fa-plus {
+  font-size: 13px;
+}
+
+#panelsStayOpen-headingOne .accordion-button i {
+  margin-left: 458px;
+}
+
+#panelsStayOpen-headingTwo .accordion-button i {
+  margin-left: 611px;
+}
+
+#panelsStayOpen-headingThree .accordion-button i {
+  margin-left: 528px;
+}
+
+#panelsStayOpen-headingFour .accordion-button i {
+  margin-left: 618px;
+}
+.description {
+margin: 1.5em 0;
+}
+.description h5 {
+color: #545454;
+font-size: 0.9em;
+margin-bottom: 12px;
+}
+.description input[type="text"] {
+padding: 8px 8px;
+color: #ccc;
+font-size: 13px;
+width: 60%;
+outline: none;
+letter-spacing: 1px;
+background: white;
+border: 1px solid;
+}
+.description input[type="submit"] {   
+border-radius: 8px;
+padding: 7px 17px 9px;
+letter-spacing: 2px;
+text-transform: uppercase;
+}
+#default{
+  text-align:center;
+}

@@ -1,10 +1,23 @@
-import React,{useEffect} from 'react';
+import React,{useEffect, useState} from 'react';
 import Footer from '../assets/Footer';
 import Navbar from '../assets/Navbar';
-import {Helmet} from "react-helmet";
+import './../css/products.css'
+import {useHistory,useLocation} from 'react-router-dom';
 
+const ProductPage = (props) => {
+  let history = useHistory();
+  let location = useLocation()
 
-const ProductPage = () => {
+  console.log(location)
+
+  useEffect(() => {
+    const unlisten = history.listen(() => {
+      window.scrollTo(0, 0);
+    });
+    return () => {
+      unlisten();
+    }
+},[])
 
     return (
         <>
@@ -118,7 +131,7 @@ const ProductPage = () => {
                                 <input type="hidden" name="currency_code" defaultValue="rupee" />
                                 <input type="hidden" name="return" defaultValue=" " />
                                 <input type="hidden" name="cancel_return" defaultValue=" " />
-                                <input type="submit" name="submit" defaultValue="Add to cart" className="button" />
+                               
                               </fieldset>
                             </form>
                           </div>
@@ -149,7 +162,7 @@ const ProductPage = () => {
                                 <input type="hidden" name="currency_code" defaultValue="rupee" />
                                 <input type="hidden" name="return" defaultValue=" " />
                                 <input type="hidden" name="cancel_return" defaultValue=" " />
-                                <input type="submit" name="submit" defaultValue="Add to cart" className="button" />
+                                
                               </fieldset>
                             </form>
                           </div>
@@ -180,7 +193,7 @@ const ProductPage = () => {
                                 <input type="hidden" name="currency_code" defaultValue="rupee" />
                                 <input type="hidden" name="return" defaultValue=" " />
                                 <input type="hidden" name="cancel_return" defaultValue=" " />
-                                <input type="submit" name="submit" defaultValue="Add to cart" className="button" />
+                                
                               </fieldset>
                             </form>
                           </div>
